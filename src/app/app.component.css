@@ -1,0 +1,13 @@
+.div-full-size{
+  height: 100%;
+  display: flex;
+/*display flex ia latimea ecranului*/
+}
+
+/*.login-component{*/
+/*  margin: auto;*/
+/*}*/
+
+.center-component{
+  margin: auto;
+}

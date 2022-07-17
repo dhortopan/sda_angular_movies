@@ -1,0 +1,12 @@
+<!--ng switch in HTML-->
+<div [ngSwitch] ="viewType" class="div-full-size">
+  <app-login class="center-component" *ngSwitchCase="'login'" (onRegister)="onViewType()"
+             (onLogin)="redirectToMovie()"></app-login>
+  <app-register class="center-component" *ngSwitchCase="'register'"(onBackToLogin)="onViewType()"></app-register>
+  <app-movie-page *ngSwitchCase="'movie'"></app-movie-page>
+  <p *ngSwitchDefault>Nothing to see here</p>
+</div>
+
+<!--<button mat-button color="primary" (click)="onViewType()">Switch</button>-->
+
+<!--<app-movie-page></app-movie-page>-->
